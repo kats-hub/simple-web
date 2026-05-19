@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title -->
+    <title>Kats Paul Virtual University | Excellence in Education</title>
+	<!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		
+ <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  
+  
+<style>
+  .whatsapp-chat {
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .whatsapp-chat:hover {
+    transform: scale(1.1);
+    background: #1ebe5d;
+  }
+
+  .whatsapp-chat svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Mobile Responsive */
+  @media (max-width: 768px) {
+    .whatsapp-chat {
+      width: 58px;
+      height: 58px;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .whatsapp-chat svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  
+  /*FLOATING CARD*/
+	
+	.floating-card{
+      margin:80px auto 0;
+
+      width:min(90%, 950px);
+
+      padding:30px;
+
+      border-radius:30px;
+
+      background:rgba(255,255,255,0.08);
+
+      backdrop-filter:blur(24px);
+
+      border:1px solid rgba(255,255,255,0.1);
+
+      box-shadow:
+      0 20px 60px rgba(0,0,0,0.4);
+
+      animation:floatCard 6s ease-in-out infinite;
+    }
+	
+	.stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+      gap:30px;
+    }
+	.stat h2{
+      font-size:2.5rem;
+      margin-bottom:10px;
+    }
+
+    .stat p{
+      color:#d0d0d0;
+    }
+	
+	@keyframes floatCard{
+      0%{
+        transform:translateY(0px);
+      }
+      50%{
+        transform:translateY(-10px);
+      }
+      100%{
+        transform:translateY(0px);
+      }
+    }
+	
+	
+	
+	    /* ANIMATED GLOW */
+
+    .glow{
+      position:fixed;
+      width:600px;
+      height:600px;
+      border-radius:50%;
+      background:radial-gradient(
+        circle,
+        rgba(0,122,255,0.25),
+        transparent 70%
+      );
+
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      filter:blur(60px);
+
+      animation:floatGlow 10s ease-in-out infinite;
+      z-index:-1;
+    }
+	
+	
+	
+	
+	
+	@keyframes floatGlow{
+      0%{
+        transform:translate(-50%, -50%) scale(1);
+      }
+      50%{
+        transform:translate(-45%, -55%) scale(1.2);
+      }
+      100%{
+        transform:translate(-50%, -50%) scale(1);
+      }
+    }
+</style>
+
+
+  
+  
+</head>
+
+<body>
+
+
+    <!-- ================= HEADER SECTION ================= -->
+
+    <header>
+
+        <!-- Navigation bar -->
+        <nav class="navbar">
+
+            <!-- University logo -->
+            <div class="logo">
+                <img src="images/logo.png" alt="Kats Paul University Logo">
+                <h2>Kats Paul Virtual University</h2>
+            </div>
+
+            <!-- Navigation links -->
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#admissions">Admissions</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <!-- Mobile menu icon -->
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+
+    <section class="hero" id="home" >
+	
+	 <!-- VIDEO -->
+	 <!-- VIDEO BACKGROUNDS -->
+    
+
+      <video autoplay muted loop playsinline>
+        <source src="bk4.mp4" type="video/mp4">
+      </video>
+
+
+        <div class="hero-content">
+
+            <h1>Welcome to Kats Paul Virtual University</h1>
+
+            <p>
+                Empowering Future Leaders Through Innovation,
+                Technology, Research and Academic Excellence in 2026.
+            </p>
+
+            <a href="#admissions" class="btn">
+                Apply Now
+            </a>
+
+        </div>
+		
+		<!-- FLOATING GLASS CARD -->
+      <div class="floating-card">
+
+        <div class="stats">
+
+          <div class="stat">
+            <h2>4.5★</h2>
+            <p>User Experience Rating</p>
+          </div>
+
+          <div class="stat">
+            <h2>110M+</h2>
+            <p>Global Impressions</p>
+          </div>
+
+          <div class="stat">
+            <h2>2026</h2>
+            <p>State of the Art UI</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    </section>
+  
+  
+
+    <!-- ================= ABOUT SECTION ================= -->
+
+    <section class="about" id="about">
+
+        <div class="section-title">
+            <h2>About Us</h2>
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+                <img src="images/campus.jpg"
+                    alt="University Campus">
+            </div>
+
+            <div class="about-text">
+
+                <h3>Leading Virtual University in Africa</h3>
+
+                <p>
+                    Kats Paul Virtual University is a modern institution
+                    committed to delivering quality education,
+                    research innovation and digital transformation.
+                </p>
+
+                <p>
+                    Our students gain practical skills, leadership
+                    training and international exposure.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= COURSES SECTION ================= -->
+
+    <section class="courses" id="courses">
+
+        <div class="section-title">
+            <h2>Our Courses</h2>
+        </div>
+
+        <div class="course-container">
+
+            <!-- Course Card -->
+            <div class="course-card">
+
+                <i class="fas fa-laptop-code"></i>
+
+                <h3>Computer Science</h3>
+
+                <p>
+                    Learn software development, AI,
+                    cybersecurity and data science.
+                </p>
+
+            </div>
+
+            <!-- Course Card -->
+            <div class="course-card">
+
+                <i class="fas fa-business-time"></i>
+
+                <h3>Business Administration</h3>
+
+                <p>
+                    Build leadership, finance,
+                    entrepreneurship and management skills.
+                </p>
+
+            </div>
+
+            <!-- Course Card -->
+            <div class="course-card">
+
+                <i class="fas fa-user-nurse"></i>
+
+                <h3>Nursing & Health</h3>
+
+                <p>
+                    Professional medical and healthcare
+                    training with modern laboratories.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ADMISSION SECTION ================= -->
+
+    <section class="admissions" id="admissions">
+
+        <div class="section-title">
+            <h2>Admissions 2026</h2>
+        </div>
+
+        <div class="admission-content">
+
+            <p>
+                Applications are now open for the 2026 academic year.
+                Join thousands of successful students today.
+            </p>
+
+            <a href="#" class="btn">
+                Download Application Form
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ================= GALLERY SECTION ================= -->
+
+    <section class="gallery" id="gallery">
+
+        <div class="section-title">
+            <h2>Campus Gallery</h2>
+        </div>
+
+        <div class="gallery-container">
+
+            <img src="images/students.jpg"
+                alt="Students at University">
+
+            <img src="images/library.jpg"
+                alt="University Library">
+
+            <img src="images/campus.jpg"
+                alt="Campus View">
+
+        </div>
+
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact" id="contact">
+
+        <div class="section-title">
+            <h2>Contact Us</h2>
+        </div>
+
+        <div class="contact-container">
+
+            <!-- Contact form -->
+            <form>
+
+                <input type="text"
+                    placeholder="Enter your name"
+                    required>
+
+                <input type="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <textarea rows="6"
+                    placeholder="Enter your message">
+                </textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER SECTION ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h3>Kats Paul University</h3>
+
+            <p>
+                Excellence | Innovation | Leadership
+            </p>
+
+            <!-- Social media icons -->
+            <div class="social-icons">
+
+                <a href="#"><i class="fab fa-facebook"></i></a>
+
+                <a href="#"><i class="fab fa-twitter"></i></a>
+
+                <a href="#"><i class="fab fa-instagram"></i></a>
+
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+
+            </div>
+
+            <p class="copyright">
+                © 2026 Kats Paul virtual University.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+	
+	
+	
+	
+	<!-- =========================
+ WhatsApp Chat Widget (HTML5)
+ Place this before </body>
+========================= -->
+
+<!-- WhatsApp Floating Button -->
+<a
+  href="https://wa.me/256773300924?text=Hello Class! do you need some help"
+  class="whatsapp-chat"
+  target="_blank"
+  aria-label="Chat on WhatsApp"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <path
+      fill="#fff"
+      d="M19.11 17.24c-.3-.15-1.77-.87-2.05-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.95 1.15-.17.2-.35.22-.65.07-.3-.15-1.28-.47-2.43-1.5-.9-.8-1.5-1.8-1.67-2.1-.17-.3-.02-.47.13-.62.14-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.48-.5-.67-.5h-.57c-.2 0-.52.08-.8.37-.27.3-1.05 1.02-1.05 2.5s1.08 2.9 1.23 3.1c.15.2 2.13 3.25 5.15 4.56.72.3 1.28.48 1.72.62.72.23 1.38.2 1.9.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.08-.12-.27-.2-.57-.35z"
+    />
+    <path
+      fill="#fff"
+      d="M16 .4C7.4.4.4 7.4.4 16c0 2.8.74 5.55 2.15 7.97L0 32l8.24-2.5A15.53 15.53 0 0 0 16 31.6c8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.3c-2.37 0-4.68-.64-6.7-1.84l-.48-.28-4.9 1.48 1.6-4.78-.3-.5A12.64 12.64 0 0 1 3.4 16C3.4 9.1 9.1 3.4 16 3.4S28.6 9.1 28.6 16 22.9 28.7 16 28.7z"
+    />
+  </svg>
+</a>
+
+
+
+</body>
+</html>
